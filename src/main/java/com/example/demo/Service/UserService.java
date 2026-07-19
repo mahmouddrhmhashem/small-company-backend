@@ -146,7 +146,7 @@ public class UserService implements UserDetailsService {
         userRepo.save(user);
         ProductsDTO productsDTO = new ProductsDTO();
         BeanUtils.copyProperties(products,productsDTO);
-
+        System.out.print("asdasd");
         return productsDTO;
     }
 
